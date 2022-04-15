@@ -8,7 +8,7 @@ import { TransactionContext } from "../context/TransactionContext"
 import {Loader} from './'
 import { shortenAddress } from '../utils/shortenAddress';
 
-const commonStyles = 'min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white'
+const commonStyles = 'min-h-[80px] sm:px-0 px-2 sm:min-w-[130px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-normal text-white'
 
 const Input = ({placeholder, name, type, value, handleChange}) => (
     <input 
@@ -40,12 +40,12 @@ const Welcome = () => {
     return (
         <div className="flex w-full justify-center items-center">
             <div className="flex mf:flex-row flex-col items-start justify-between md:20 py-12 px-4">
-                <div className="flex flex-1 justify-start flex-col mf:mr-10">
+                <div className="flex flex-1 justify-start flex-col mf:mr-[90px]">
                     <h1 className="text-3xl sm:tex-5xl text-white text-gradient  py-1">
                         Send crypto <br /> across the world
                     </h1>
-                    <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-                        No more borders. By and sell cryprocurrencies on Krypton.
+                    <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-lg">
+                        No more financial borders. <br />Send cryprocurrencies via Krypt. <br /> Just install Metamask!
                     </p>
 
                     {!currentAccount && (
@@ -59,7 +59,7 @@ const Welcome = () => {
                     )}
                     
 
-                    <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10 ">
+                    <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
                         <div className={`rounded-tl-2xl ${commonStyles} `}>
                             Reliability
                         </div>

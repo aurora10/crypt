@@ -66,9 +66,9 @@ const Transactions = () => {
                                     Connect your account to see latest transactions
                         </h3>
                     )}
-
+ß
                     <div className="flex flex-wrap justify-cemter items-center mt-10">
-                            {transactions.reverse().map((transaction, i) =>(
+                            {[...transactions].reverse().map((transaction, i) =>(
                                 < TransactionCard  key={i} {...transaction }/>
                             ))}
                     </div>

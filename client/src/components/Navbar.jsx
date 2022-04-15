@@ -23,7 +23,7 @@ const Navbar = () => {
                 <img src={logo} alt="logo" className='w-32 cursor-pointer' />
             </div>
             <ul className='text-white md:flex hidden flex-row justify-between items-center flex-initial'>
-                {["Market", "Exchange", "Tutorials", "Walltets"].map((item, index)=> (
+                {["Market News", "Exchange", "Tutorials", "Walltets"].map((item, index)=> (
                     <NavbarItem key={item + index} title={item} />
                 ))}
                  <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>Login</li>
@@ -43,12 +43,12 @@ const Navbar = () => {
                             <li className='text-xl w-full my-2'>
                                 <AiOutlineClose  onClick={() => setToggleMenu(false)}/>
                             </li>
-                            {["Market", "Exchange", "Tutorials", "Walltets"].map((item, index)=> (
+                            {["Market News", "Exchange", "Tutorials", "Walltets"].map((item, index)=> (
                     <NavbarItem key={item + index} title={item} classProps="my-2 text-lg"/>
                 ))}
                         </ul>
                     )}
-                    </div>
+            </div>
 
 
            
